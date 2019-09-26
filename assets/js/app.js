@@ -44,11 +44,11 @@ d3.csv('assets/data/data.csv').then(function(census) {
 
     // Scale functions
     var xLinearScale = d3.scaleLinear()
-        .domain(d3.extent(census, (d) => d.poverty))
+        .domain([d3.min(census, (d) => d.poverty * 0.8), d3.max(census, (d) => d.poverty * 1.2)])
         .range([0, chartWidth]);
     
     var yLinearScale = d3.scaleLinear()
-        .domain(d3.extent(census, (d) => d.healthcare))
+        .domain([d3.min(census, (d) => d.healthcare * 0.8), d3.max(census, (d) => d.healthcare * 1.2)])
         .range([chartHeight, 0]);
     
     // Axes functions
@@ -74,7 +74,7 @@ d3.csv('assets/data/data.csv').then(function(census) {
         .attr('opacity', '0.75')
         .classed('stateCircle', true);
     
-    chartGroup.selectAll('text')
+    chartGroup.selectAll('.stateText')
         .data(census)
         .enter()
         .append('text')
