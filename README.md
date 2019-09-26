@@ -7,7 +7,7 @@ For codes, please refer to the following documents:
 * `assets/css/Style.css`
 * `index.html`
 
-You can access the web dashboard by clicking [here](https://soobing91.github.io/Assignment_16_SooBin/index.html).
+You can access the web dashboard by clicking [here](https://soobing91.github.io/D3-challenge/index.html).
 
 When running on a local environment, please make sure that `python3 -m http.server` is enabled.
 
