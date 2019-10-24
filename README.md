@@ -7,7 +7,7 @@ For codes, please refer to the following documents:
 * `assets/css/Style.css`
 * `index.html`
 
-You can access the web dashboard by clicking [here](https://soobing91.github.io/A12_Web_Chart_App/index.html).
+You can access the web dashboard by clicking [here](https://soobing91.github.io/A13_Web_Chart_App/index.html).
 
 When running on a local environment, please make sure that `python3 -m http.server` is enabled.
 
